@@ -7,7 +7,8 @@
 /* about:config */
 /* set these vars accordingly */
 /* toolkit.legacyUserProfileCustomizations.stylesheets true
-/* browser.fullscreen.autohide false
+/* sidebar.revamp true
+/* sidebar.verticalTabs true
 /* widget.gtk.rounded-bottom-corners.enabled true */
 
 /* splitter fixes */
@@ -27,7 +28,7 @@ outline: none !important;
 overflow: unset !important;
 }
 
-:root:not([inDOMFullscreen]) {
+:root:not([sizemode="fullscreen"]) {
   #tabbrowser-tabbox browser:not(.devtools-toolbox-bottom-iframe, .devtools-toolbox-side-iframe) {
   border-radius: 8px;
   }
@@ -35,7 +36,7 @@ overflow: unset !important;
   .browserStack {
     border-radius: 8px;
     margin: 0 6px 6px 0;
-    box-shadow: 0 1.5px 9px light-dark(#00000026, #00000040);
+    box-shadow: var(--content-area-shadow) !important;
     outline: 0.5px solid var(--sidebar-border-color) !important;
   }
 
@@ -48,7 +49,7 @@ overflow: unset !important;
   .devtools-toolbox-side-iframe {
     border-radius: 8px;
     margin-bottom: 6px !important;
-    box-shadow: 0 1.5px 9px light-dark(#00000026, #00000040);
+    box-shadow: var(--content-area-shadow) !important;
     -moz-window-dragging: no-drag;
     &:first-child { margin-left: 6px !important; }
     &:last-child { margin-right: 6px !important; }
@@ -58,7 +59,7 @@ overflow: unset !important;
   .devtools-toolbox-bottom-iframe {
     border-radius: 8px;
     margin: 0 6px 6px 0px !important;
-    box-shadow: 0 1.5px 9px light-dark(#00000026, #00000040);
+    box-shadow: var(--content-area-shadow) !important;
     outline: 0.5px solid var(--sidebar-border-color) !important;
   }
 }
