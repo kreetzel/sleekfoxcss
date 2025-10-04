@@ -1,5 +1,5 @@
 /* sleekfoxcss by kreetzelpretzel */
-/* thanks:
+/* thanks */
 /* AmirhBeigi/zen-floating-statusbar
 /* RobotoSkunk/zen-better-findbar
 /* akkva/gwfox */
@@ -76,7 +76,7 @@ border: 1px solid var(--chrome-content-separator-color) !important;
 background: var(--toolbar-bgcolor) !important;
 }
 
-/* floating find bar */
+/* floating findbar */
 :root {
   --better-findbar-transform-translateY: 150px;
   --better-findbar-transform-translateX: -50%;
