@@ -24,6 +24,10 @@
 }
 
 /* round border */
+:root {
+  --sidebar-border-color: var(--chrome-content-separator-color) !important;
+}
+
 #tabbrowser-tabbox {
 box-shadow: none !important;
 outline: none !important;
